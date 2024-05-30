@@ -31,7 +31,7 @@ def print_current_time(message, seconds=None):
     if seconds is not None:
         for i in range(seconds, 0, -1):
             mins, secs = divmod(i, 60)
-            time_format = '{:02d}:{:02d}'.format(mins, secs)
+            time_format = '{:02d}:{:02d}'。format(mins, secs)
             countdown_message = f"倒计时: {time_format}"
             # 更新GUI中的倒计时，每次倒计时后自动换行
             log_text.insert(tk.END, countdown_message + "\n")
